@@ -1,0 +1,35 @@
+/* pages/gallery.wxss */
+
+.fixedView {
+  width: 100%;
+  height: 80rpx;
+  position: fixed;
+  bottom: 30rpx;
+}
+
+.btn {
+  height: 80rpx;
+  margin-right: 30rpx;
+  width: 200rpx;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: #14a1fd;
+  color: #fff;
+  border-radius: 20rpx;
+}
+
+.load_more {
+  width: 65%;
+  margin: 20rpx auto;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.load_tips {
+  display: inline-block;
+  vertical-align: middle;
+}

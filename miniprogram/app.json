@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/GSQGallery/GSQGallery",
+    "pages/GSQUserCenter/GSQUserCenter",
+    "pages/GSQApartmentFinder/GSQApartmentFinder"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#A9A9A9",
+    "navigationBarTitleText": "搞事情",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#A9A9A9",
+    "selectedColor": "#000000",
+    "backgroundColor": "#A9A9A9",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/GSQGallery/GSQGallery",
+        "text": "home",
+        "iconPath": "rsc/tabBarIcons/unselected.png",
+        "selectedIconPath": "rsc/tabBarIcons/selected.png"
+      },
+      {
+        "pagePath": "pages/GSQUserCenter/GSQUserCenter",
+        "text": "userCenter",
+        "iconPath": "rsc/tabBarIcons/unselected.png",
+        "selectedIconPath": "rsc/tabBarIcons/selected.png"
+      }
+    ]
+  }
+}
