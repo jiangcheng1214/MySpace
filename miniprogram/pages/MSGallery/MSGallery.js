@@ -128,7 +128,7 @@ Page({
   },
   findApartment: function() {
     wx.navigateTo({
-      url: '../GSQApartmentFinder/GSQApartmentFinder'
+      url: '../MSApartmentFinder/MSApartmentFinder'
     })
   }
 })

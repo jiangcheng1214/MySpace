@@ -1,4 +1,4 @@
-// miniprogram/pages/GSQApartmentFinder/GSQApartmentFinder.js
+// miniprogram/pages/MSApartmentFinder/MSApartmentFinder.js
 Page({
 
   /**

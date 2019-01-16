@@ -1,13 +1,13 @@
 {
   "pages": [
-    "pages/GSQGallery/GSQGallery",
-    "pages/GSQUserCenter/GSQUserCenter",
-    "pages/GSQApartmentFinder/GSQApartmentFinder"
+    "pages/MSGallery/MSGallery",
+    "pages/MSUserCenter/MSUserCenter",
+    "pages/MSApartmentFinder/MSApartmentFinder"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#A9A9A9",
-    "navigationBarTitleText": "搞事情",
+    "navigationBarTitleText": "慢域",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": false
   },
@@ -18,13 +18,13 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/GSQGallery/GSQGallery",
+        "pagePath": "pages/MSGallery/MSGallery",
         "text": "home",
         "iconPath": "rsc/tabBarIcons/unselected.png",
         "selectedIconPath": "rsc/tabBarIcons/selected.png"
       },
       {
-        "pagePath": "pages/GSQUserCenter/GSQUserCenter",
+        "pagePath": "pages/MSUserCenter/MSUserCenter",
         "text": "userCenter",
         "iconPath": "rsc/tabBarIcons/unselected.png",
         "selectedIconPath": "rsc/tabBarIcons/selected.png"
