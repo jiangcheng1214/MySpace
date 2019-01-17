@@ -1,7 +1,7 @@
 // pages/gallery.js
 const db = wx.cloud.database()
-const imageCloudPrefix = "cloud://test-environment-0baa51.7465-test-environment-0baa51/"
 const imageBatchCount = 5
+const appInstance = getApp()
 Page({
 
   /**
@@ -18,6 +18,17 @@ Page({
    */
   onLoad: function(options) {
     this.loadAvailableImageList()
+    let that = this
+    wx.getSystemInfo({
+      success: function(res) {
+        console.log(res)
+        that.setData({
+          screenHeight: res.windowHeight,
+          screenWidth: res.windowWidth,
+          imageWidth: res.pixelRatio * res.windowWidth,
+        });
+      }
+    });
   },
 
   /**
@@ -76,7 +87,7 @@ Page({
       loadingImages: this.data.loadingImages + 1
     })
     wx.cloud.downloadFile({
-      fileID: imageCloudPrefix + fileID, // 文件 ID
+      fileID: appInstance.globalData.displayPictureCloudUrlPrefix + fileID, // 文件 ID
       success: res => {
         console.log(res.tempFilePath)
         let downloadedImages = that.data.downloadedImages
