@@ -1,8 +1,10 @@
 //app.js
 App({
   globalData: {
-    appid:'wx16e4f3871b53ad11',
-    secret:'07a0b5ffc66b980ac2127573ed7a0002'
+    appid: 'wx16e4f3871b53ad11',
+    secret: '07a0b5ffc66b980ac2127573ed7a0002',
+    cloudEnvId: 'test-environment-0baa51',
+    displayPictureCloudUrlPrefix: 'cloud://test-environment-0baa51.7465-test-environment-0baa51/displayPictures/'
   },
   onLaunch: function() {
 
@@ -10,13 +12,13 @@ App({
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
     } else {
       wx.cloud.init({
-        env: 'test-environment-0baa51',
+        env: this.globalData.cloudEnvId,
         traceUser: true
       })
     }
     this.onGetOpenid()
   },
-  onGetOpenid: function () {
+  onGetOpenid: function() {
     // 调用云函数
     wx.cloud.callFunction({
       name: 'login',

@@ -1,15 +1,13 @@
 <!--pages/gallery.wxml-->
 
-<scroll-view scroll-y="true">
-  <view class="scroll-y">
-    <view wx:for-items="{{downloadedImages}}" wx:key="index">
-      <image style="background-color: #eeeeee;" src="{{item}}"></image>
-    </view>
+<scroll-view class='scrl-view' scroll-y="true" scroll-x="false">
+  <view class='scrl-view-row' wx:for-items="{{downloadedImages}}" wx:key="index">
+    <image src="{{item}}" mode="aspectFill" style="width:{{imageWidth}}rpx;"></image>
   </view>
 </scroll-view>
 <view class="load_more" hidden="{{loadingImages==0}}">
   <view class="load-tips">正在加载...{{loadingImages}}</view>
 </view>
 <view class='fixedView'>
-  <button class="btn" bindtap="findApartment">搜房</button>
+  <button class="floatingBtn" bindtap="findApartment">搜</button>
 </view>
