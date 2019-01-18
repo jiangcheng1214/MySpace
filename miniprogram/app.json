@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/MSLogin/MSLogin",
     "pages/MSGallery/MSGallery",
     "pages/MSUserCenter/MSUserCenter",
     "pages/MSApartmentFinder/MSApartmentFinder"

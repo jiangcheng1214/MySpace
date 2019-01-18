@@ -1,0 +1,4 @@
+<!--miniprogram/pages/MSLogin/MSLogin.wxml-->
+<view class="login">
+  <button class='loginBtn' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 进入慢域 </button>
+</view>

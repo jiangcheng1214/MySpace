@@ -7,7 +7,6 @@ App({
     displayPictureCloudUrlPrefix: 'cloud://test-environment-0baa51.7465-test-environment-0baa51/displayPictures/'
   },
   onLaunch: function() {
-
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
     } else {
